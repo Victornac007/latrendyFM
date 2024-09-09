@@ -1,0 +1,27 @@
+.section_1{
+    width: 100%;
+    height: 100vh;
+    background: url(../assets/imgs/section-01.png) center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 32px, #ea3ea8 32px, #ea3ea8 64px);
+    background-color: #f2fa00;
+}
+.text--section_1{
+    max-width: 480px;
+    align-self: center;
+    margin: 0 auto;
+    backdrop-filter: blur(9px);
+    background-color: rgba(14, 14, 14, 0.835);
+    padding: 4rem;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    color: wheat;
+}
+.logo_div{
+    margin: 0 auto;
+}
+.logo_div img{
+    max-width: 1000px;
+    transform: scale(1.5);
+}

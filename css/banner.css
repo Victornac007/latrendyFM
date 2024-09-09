@@ -1,0 +1,78 @@
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.banner__container-show {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100% 100% 100%;
+    animation: mover 10s linear infinite;
+}
+
+
+.banner__continer-img {
+    width: 100%;
+}
+
+.banner__info_1{
+    background: url(../assets/imgs/concepto_papa.png) center / cover no-repeat;
+    width: 100%;
+    padding: 50px 50px 50px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all 300ms;
+}
+.banner__info_2{
+    background: url(../assets/imgs/sld__jump.webp) center / cover no-repeat;
+    width: 100%;
+    padding: 50px 50px 50px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all 300ms;
+}
+.banner__info_2 .info_banner{
+    backdrop-filter: blur(8px);
+    background-color: #00000058;
+}
+.banner__info_3{
+    background: url(../assets/imgs/sld__sportlife_run.webp) center / cover no-repeat;
+    width: 100%;
+    padding: 50px 50px 50px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all 300ms;
+}
+
+
+@keyframes mover{
+    32%{
+        margin-left: 0%;
+    }
+    33%{
+        margin-left: -100%;
+    }
+    65%{
+        margin-left: -100%;
+    }
+    66%{
+        margin-left: -200%;
+    }
+    98%{
+        margin-left: -200%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+}
