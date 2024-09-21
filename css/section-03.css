@@ -1,0 +1,43 @@
+.Programas-section{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/imgs/background_retro-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Programas-section h2{
+    color: wheat;
+    margin-bottom: 2.5rem;
+    border-bottom: solid 1px rgba(255, 255, 0, 0.227);
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: .2rem;
+}
+.Programas-section h3{
+    text-align: start;
+    color: black;
+    font-weight: 900;
+    margin-top: 0;
+    padding: .5rem;
+}
+.Programas-section p{
+    text-align: start;
+    color: black;
+    padding-left: .5rem;
+    margin-bottom: 0;
+}
+
+.Programas-section .card {
+    width: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: transparent;
+  }

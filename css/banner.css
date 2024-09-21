@@ -2,6 +2,8 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 
 .banner__container {
@@ -55,7 +57,25 @@
     transition: all 300ms;
 }
 
+.banner__text{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 90000;
+    font-family: 'Prompt', sans-serif;
+    background-color: rgba(4, 240, 240, 0.207);
+}
 
+.banner__text p{
+    color: #ffff;
+    background-color: rgba(19, 20, 20, 0.207);
+}
 @keyframes mover{
     32%{
         margin-left: 0%;
