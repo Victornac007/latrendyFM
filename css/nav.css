@@ -27,13 +27,12 @@
 }
 .nav__container ul{
     display: flex;
+    justify-content:end;
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    padding: 10px;
     padding-bottom: 0;
     align-items: center;
-    justify-content: space-evenly;
 }
 .nav__container a{
     color: #ffffff;
@@ -80,3 +79,4 @@ ul{
 .buttom-i{
     transform: rotate(90deg);
 }
+
