@@ -97,3 +97,70 @@
         margin-left: 0%;
     }
 }
+
+
+
+/* Estilo básico para la galería */
+figure {
+    margin:0;
+}
+#gallery {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ajusta la altura al 100% del contenedor principal */
+}
+  
+  .gallery-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; /* Ajusta la altura al 100% del contenedor principal */
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+  }
+  
+  .gallery-item img {
+      width: 100%;
+      height: 100%; /* Asegura que las imágenes llenen el contenedor */
+      object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
+      display: block;
+  }
+  
+  .gallery-item.active {
+      opacity: 1;
+  }
+  
+  /* Navegación de la galería */
+  .gallery-navigation {
+      display: flex;
+      justify-content: space-between;
+      width: calc(100% - 40px);
+      margin: 0 20px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  
+  .nav-button {
+      background-color: rgba(0,0,0, .3);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+  .nav-button > span {
+    font-size: 30px;
+  }
+  .nav-button:hover {
+      background-color: #005f5f;
+  }
