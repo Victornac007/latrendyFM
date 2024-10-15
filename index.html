@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/section-02.css">
     <link rel="stylesheet" href="./css/section-03.css">
+    <link rel="stylesheet" href="./css/contentScrolling.css">
 </head>
 <!-- ANOTACIONES -->
 <!-- carrusel en programas destacados -->
@@ -26,7 +27,7 @@
 <!-- TODO SE QUEDA -->
 
 <body>
-        <section class = "banner">
+        <!-- <section class = "banner">
             <div class = "banner__container">
                 <div class = "banner__container-show banner__container-img">
                     <div class = "banner__info_1">
@@ -37,20 +38,20 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="gallery">
             <div class="gallery-container">
                 <figure class="gallery-item">
-                    <img src="https://www.espai.es/blog/wp-content/uploads/2023/10/slider-dinamico-imagen1-japon.jpg" alt="Imagen 1">
-        <!--             <figcaption>Descripción de la imagen 1</figcaption> -->
+                    <img src="https://i.ytimg.com/vi/PNrIFZgsj64/maxresdefault.jpg" alt="Imagen 1">
                 </figure>
                 <figure class="gallery-item">
-                    <img src="https://www.espai.es/blog/wp-content/uploads/2023/10/slider-dinamico-imagen2-japon.jpg" alt="Imagen 2">
-        <!--             <figcaption>Descripción de la imagen 2</figcaption> -->
+                    <img src="https://img.freepik.com/vector-gratis/plantilla-banner-venta-actividades-despues-escuela-degradado_23-2149668923.jpg" alt="Imagen 2">
                 </figure>
                 <figure class="gallery-item">
-                    <img src="https://www.espai.es/blog/wp-content/uploads/2023/10/slider-dinamico-imagen3-japon.jpg" alt="Imagen 3">
-        <!--             <figcaption>Descripción de la imagen 3</figcaption> -->
+                    <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2024/6/17/eddd1zdccrft1vfoxbgj/red-bull-solo-q-2024-chile" alt="Imagen 3">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://templates.visual-paradigm.com/repository/images/b483aea0-fbbc-4574-9dcb-4a5899ba20a0/youtube-channel-arts-design/sport-youtube-channel-art.png" alt="Imagen 3">
                 </figure>
             </div>
             <nav class="gallery-navigation">
@@ -64,7 +65,58 @@
             <h2>¡Bienvenido!</h2>
             <p>La radio online que te hará vibrar con los mejores hits en LATRENDYFM.</p>
         </div> -->
-
+        <section>
+            <div class="marquee marquee-iconos">
+                <ul class="marquee-content marquee-content-iconos">
+                    <li class="icono">
+                        <a href="https://www.xbox.com/es-ES/">
+                            <i class="bi bi-xbox"></i>
+                        </a>
+                    </li>
+                    <li class="icono">
+                        <a href="https://github.com">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                    <li class="icono">
+                        <a href="https://www.youtube.com">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="icono">
+                        <a href="https://www.apple.com">
+                            <i class="bi bi-apple"></i>
+                        </a>
+                    </li>
+                    <li class="icono">
+                        <a href="https://www.twitch.tv">
+                            <i class="bi bi-twitch"></i>
+                        </a>
+                    </li>
+                    <li class="icono">
+                        <a href="https://www.facebook.com">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="icono">
+                        <a href="https://www.instagram.com">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="icono">
+                        <a href="https://www.amd.com">
+                            <i class="bi bi-amd"></i>
+                        </a>
+                    </li>
+                    <li class="icono">
+                        <a href="https://www.nvidia.com">
+                            <i class="bi bi-nvidia"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
         <nav class = "nav__container">
             <img src="./assets/Primer logo la trendy.png" alt="logo">
             <h1>TRENDYFM</h1>
@@ -116,10 +168,9 @@
         </section>
 
         <section class="section_2">
-            <div class="locutores-section">
+            <div class="marquee locutores-section">
                 <h2>Nuestros Locutores Estelares</h2>
-                <!-- COLOCAR 3 MAS CON CARRUSEL -->
-                <div class="section_2--info">
+                <div class="marquee-content marquee-content-locutores locutores--info">
                     <div class="card">
                         <img src="./assets/locutores/carlos_loc.png" alt="Carlos El Ché">
                         <h3>Carlos El Ché</h3>
@@ -137,13 +188,48 @@
                         <h3>Javier El Retro</h3>
                         <p>Experto Musical</p>
                     </div>
-
+                    
+                    <div class="card">
+                        <img src="https://35mm.es/wp-content/uploads/2022/10/locutores-radio-espanoles.jpg" alt="Laura La Innovadora">
+                        <h3>Laura La Innovadora</h3>
+                        <p>Locutora de Tendencias</p>
+                    </div>
+                
+                    <div class="card">
+                        <img src="https://media.istockphoto.com/id/1279601483/es/foto/retrato-del-joven-presentador-de-radio-masculino-tomando-una-copa-mirando-enfocado-mientras.jpg?s=612x612&w=0&k=20&c=KmUi9jgyobdemm1o72PZ2SD3hZTUVdVjSHN_gr4JLQo=" alt="Pablo El Experto">
+                        <h3>Pablo El Experto</h3>
+                        <p>Locutor de Noticias</p>
+                    </div>
+                
+                    <div class="card">
+                        <img src="https://jimmyjaviermiranda.com/wp-content/uploads/2020/04/foto-dj-radio-2.jpg?w=720" alt="María La Creativa">
+                        <h3>María La Creativa</h3>
+                        <p>Locutora de Cultura</p>
+                    </div>
+                
+                    <div class="card">
+                        <img src="https://radionotas.com/wp-content/uploads/2018/07/Locutor.jpg" alt="Ricardo El Clásico">
+                        <h3>Ricardo El Clásico</h3>
+                        <p>Locutor de Música Clásica</p>
+                    </div>
+                
+                    <div class="card">
+                        <img src="https://www.tuproyectodevida.pe/wp-content/uploads/2023/03/que-estudiar-ser-locutor-comunicacion-1200x628.jpg" alt="Clara La Moderna">
+                        <h3>Clara La Moderna</h3>
+                        <p>Locutora de Actualidad</p>
+                    </div>
+                
+                    <div class="card">
+                        <img src="https://locutorescomerciais.com.br/wp-content/uploads/2021/05/Locutor-Online-um-segmento-que-nao-para-de-crescer.jpg">
+                        <h3>Andrés El Animador</h3>
+                        <p>Locutor de Entretenimiento</p>
+                    </div>
                 </div>
             </div>
             <div class="Programas-section">
                 <h2>Programas Destacados</h2>
                 <!-- COLOCAR 3 MAS CON CARRUSEL -->
-                <div class="section_2--info">
+                <div class="programas--info">
                     <div class="card">
                         <img src="./assets/imgs/programa_top-10.jpg" alt="Carlos El Ché">
                         <p>Música</p>
@@ -183,6 +269,31 @@
                 </div>
             </div>
         </section>
+        <div class="news-section">
+            <h2>Noticias Destacadas</h2>
+            <!-- COLOCAR 3 MAS CON CARRUSEL -->
+            <div class="section_2--info">
+                <div class="card">
+                    <img src="./assets/imgs/news-1.jpg" alt="Noticia 1">
+                    <h3>Noticia 1</h3>
+                    <p>Descripción de la noticia 1</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/imgs/news-2.jpg" alt="Noticia 2">
+                    <h3>Noticia 2</h3>
+                    <p>Descripción de la noticia 2</p>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/imgs/news-3.jpg" alt="Noticia 3">
+                    <h3>Noticia 3</h3>
+                    <p>Descripción de la noticia 3</p>
+                </div>
+
+            </div>
+        </div>
+
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
