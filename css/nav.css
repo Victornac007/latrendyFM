@@ -1,6 +1,6 @@
 .nav__container {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     align-items: center;
     background-color: rgb(5, 5, 17);
@@ -36,7 +36,7 @@
 }
 .nav__container a{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
 }
 ul{
