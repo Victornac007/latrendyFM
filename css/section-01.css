@@ -37,6 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: .5rem;
 }
 .player_radio-tittle h6{
     background-color: red;
@@ -52,9 +53,7 @@
 }
 .player_radio audio{
     border-radius: 1rem;
-    min-width: 30%;
-    margin: 5px auto;
-
+    margin: 15px auto;
 }
 .player_radio-description{
     display: flex;
