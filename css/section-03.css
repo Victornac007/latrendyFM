@@ -7,11 +7,12 @@
     flex-direction: column;
     background-image: url(../assets/imgs/background_retro-2.jpg);
     background-size: cover;
+    background-position: top;
     background-repeat: no-repeat;
 }
 .Programas-section h2{
     color: wheat;
-    margin-bottom: 2.5rem;
+    margin-bottom: .5rem;
     border-bottom: solid 1px rgba(255, 255, 0, 0.227);
     width: fit-content;
     text-align: center;
@@ -36,7 +37,6 @@
 }
 
 .Programas-section .card {
-    width: 200px;
     margin-bottom: 10px;
     text-align: center;
     border: transparent;
