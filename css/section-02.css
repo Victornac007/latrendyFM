@@ -83,8 +83,11 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
 .programas--info .card{
+  width: var(--marquee-element-width);
+  max-height: 100%;
   margin: 0 10px;
   padding: 10px;
   min-width: 190px;
