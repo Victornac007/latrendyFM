@@ -46,6 +46,9 @@ ul{
     margin: 0 10px;
     text-decoration: none;
 }
+.nav__list li a{
+    font-size: 1.3rem;
+}
 .nav__button{
     cursor: pointer;
     display: flex;
