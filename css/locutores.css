@@ -1,3 +1,13 @@
+:root {
+    --locutores-width: 100%;
+    --locutores-height: 20vh;
+    /* --locutores-elements: 8;  */
+    --locutores-elements-displayed: 4;
+    --locutores-element-width: calc(var(--locutores-width) / var(--locutores-elements-displayed));
+    --locutores-animation-duration: calc(var(--locutores-elements) * 3s);
+  }
+
+
 .locutores-section{
     width: 100%;
     height: fit-content;
@@ -29,25 +39,27 @@
     list-style: none;
     height: 100%;
     display: flex;
-    animation: locutoresScrolling var(--marquee-animation-duration) linear infinite;
+    animation: locutoresScrolling var(--locutores-animation-duration) linear infinite;
 }
-
+@keyframes locutoresScrolling {
+    0% { transform: translateX(calc(-1 * var(--locutores-element-width) * var(--locutores-elements))); }
+    100% { transform: translateX(0);}
+}
 .locutores--info{
     display: flex;
-    justify-content: space-around;
     align-items: center;
     height: 100%;
     width: 100%;
+    
 }  
-.locutores--info .card{
-    margin: 10px;
+.marquee-content-locutores .card{
+    margin-left: 10px;
     padding: 10px;
     min-width: 190px;
     max-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
     flex-shrink: 0;
     width: var(--marquee-element-width);
     white-space: nowrap;

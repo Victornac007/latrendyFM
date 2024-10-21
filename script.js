@@ -58,3 +58,15 @@ root.style.setProperty("--marquee-elements", marqueeContent.children.length);
 for(let i=0; i<marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
+
+// locutores scroll
+const rootLocutores = document.documentElement;
+const locutoresElementsDisplayed = getComputedStyle(rootLocutores).getPropertyValue("--locutores-elements-displayed");
+const marqueeContentLocutores = document.querySelector("div.marquee-content-locutores");
+
+rootLocutores.style.setProperty("--locutores-elements", marqueeContentLocutores.children.length);
+
+for(let i=0; i<locutoresElementsDisplayed; i++) {
+    marqueeContentLocutores.appendChild(marqueeContentLocutores.children[i].cloneNode(true));
+}
+
