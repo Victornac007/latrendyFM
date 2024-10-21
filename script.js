@@ -70,3 +70,14 @@ for(let i=0; i<locutoresElementsDisplayed; i++) {
     marqueeContentLocutores.appendChild(marqueeContentLocutores.children[i].cloneNode(true));
 }
 
+// PROGRAMAS SCROLLING
+
+const rootProgramas = document.documentElement;
+const programasElementsDisplayed = getComputedStyle(rootProgramas).getPropertyValue("--programas-elements-displayed");
+const marqueeContentProgramas = document.querySelector("div.marquee-content-programas");
+
+rootProgramas.style.setProperty("--programas-elements", marqueeContentProgramas.children.length);
+
+for(let i=0; i<programasElementsDisplayed; i++) {
+    marqueeContentProgramas.appendChild(marqueeContentProgramas.children[i].cloneNode(true));
+}

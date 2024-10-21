@@ -1,3 +1,13 @@
+:root {
+    --programas-width: 100%;
+    --programas-height: 20vh;
+    /* --programas-elements: 12; */ /* defined with JavaScript */
+    --programas-elements-displayed: 5;
+    --programas-element-width: calc(var(--programas-width) / var(--programas-elements-displayed));
+    --programas-animation-duration: calc(var(--programas-elements) * 3s);
+  }
+
+
 .Programas-section{
     width: 100%;
     height: fit-content;
@@ -9,7 +19,38 @@
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
 }
+.Programas-section:before, .Programas-section:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+.Programas-section:before {
+    left: 0;
+    background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+.Programas-section:after {
+    right: 0;
+    background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+
+.marquee-content-programas{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: ProgramasScrolling var(--locutores-animation-duration) linear infinite;
+}
+@keyframes ProgramasScrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+}
+
+
 .Programas-section h2{
     color: wheat;
     margin-bottom: .5rem;
@@ -22,6 +63,7 @@
     border-bottom-right-radius: 1rem;
     padding: .2rem;
 }
+
 .Programas-section h3{
     text-align: start;
     color: black;
@@ -41,3 +83,7 @@
     text-align: center;
     border: transparent;
 }
+
+
+
+

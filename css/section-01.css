@@ -21,10 +21,13 @@
     border-top-left-radius: 40%;
     border-bottom-right-radius: 40%;
     color: white;
+    border: solid 1px rgba(115, 109, 109, 0.616);
+
 }
 .player_radio{
     display: flex;
     width: 30%;
+    max-width: 500px;
     aspect-ratio: 24/9;
     flex-direction: column;
     margin: 0 auto;
@@ -32,6 +35,8 @@
     backdrop-filter: blur(19px);
     padding: 0 2rem;
     border-radius: 1rem;
+    border: solid 1px rgba(255, 255, 255, 0.435);
+
 }
 .player_radio-tittle{
     display: flex;
@@ -89,12 +94,21 @@
         padding: 1rem;
     }
     .text--section_1{
-        width: 90%;
+        width: 70%;
+        max-width: 280px;
         margin: 1rem auto;
+        border-top-left-radius: 30%;
+        border-bottom-right-radius: 30%;
     }
     .player_radio{
         width: 100%;
         margin: 1rem auto;
+        padding: 0 1rem;
+    }
+    .player_radio img{
+        width: 100px;
+        transform: scale(2);
+        margin: 0 auto;
     }
     .logo_div{
         width: 100%;
