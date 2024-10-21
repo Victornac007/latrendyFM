@@ -2,7 +2,7 @@
     --locutores-width: 100%;
     --locutores-height: 20vh;
     /* --locutores-elements: 8;  */
-    --locutores-elements-displayed: 4;
+    --locutores-elements-displayed: 3;
     --locutores-element-width: calc(var(--locutores-width) / var(--locutores-elements-displayed));
     --locutores-animation-duration: calc(var(--locutores-elements) * 3s);
   }
@@ -53,7 +53,7 @@
     
 }  
 .marquee-content-locutores .card{
-    margin-left: 20px;
+    margin-left: 10px;
     padding: 10px;
     min-width: 190px;
     max-height: 100%;

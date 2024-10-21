@@ -1,8 +1,8 @@
 :root {
     --programas-width: 100%;
     --programas-height: 20vh;
-    /* --programas-elements: 12; */ /* defined with JavaScript */
-    --programas-elements-displayed: 5;
+    /* --programas-elements: 8; */ /* defined with JavaScript */
+    --programas-elements-displayed: 3;
     --programas-element-width: calc(var(--programas-width) / var(--programas-elements-displayed));
     --programas-animation-duration: calc(var(--programas-elements) * 3s);
   }
@@ -79,9 +79,16 @@
 }
 
 .Programas-section .card {
-    margin-bottom: 10px;
-    text-align: center;
-    border: transparent;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    margin: 0 10px;
+    padding: 10px;
+    min-width: 190px;
+    height: 280px;
+    display: flex;
+    align-items: start;
+    /* text-align: center; */
+    flex-shrink: 0;
 }
 
 

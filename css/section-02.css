@@ -30,37 +30,6 @@
 .ads_section {
   grid-area: ads_section; 
 }
-.Programas-section{
-  width: 100%;
-  height: fit-content;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 1rem;
-  overflow: hidden;
-  position: relative;
-}
-.programas--info{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  animation: scrollingReverse var(--marquee-animation-duration) linear infinite;
-}
-.programas--info .card{
-  width: var(--marquee-element-width);
-  max-height: 100%;
-  margin: 0 10px;
-  padding: 10px;
-  min-width: 190px;
-  height: 280px;
-  display: flex;
-  align-items: start;
-  /* text-align: center; */
-  flex-shrink: 0;
-}
-
 
 .card {
   width: 200px;
