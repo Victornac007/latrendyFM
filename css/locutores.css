@@ -1,0 +1,54 @@
+.locutores-section{
+    width: 100%;
+    height: fit-content;
+    background-image: url(../assets/imgs/backgorund_retro-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+.locutores-section:before, .locutores-section:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+.locutores-section:before {
+    left: 0;
+    background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+.locutores-section:after {
+    right: 0;
+    background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+.marquee-content-locutores{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: locutoresScrolling var(--marquee-animation-duration) linear infinite;
+}
+
+.locutores--info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}  
+.locutores--info .card{
+    margin: 10px;
+    padding: 10px;
+    min-width: 190px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    white-space: nowrap;
+}
