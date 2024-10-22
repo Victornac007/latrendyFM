@@ -2,7 +2,7 @@
     --programas-width: 100%;
     --programas-height: 20vh;
     /* --programas-elements: 8; */ /* defined with JavaScript */
-    --programas-elements-displayed: 3;
+    --programas-elements-displayed: 4;
     --programas-element-width: calc(var(--programas-width) / var(--programas-elements-displayed));
     --programas-animation-duration: calc(var(--programas-elements) * 3s);
   }
@@ -25,7 +25,7 @@
 .Programas-section:before, .Programas-section:after {
     position: absolute;
     top: 0;
-    width: 10rem;
+    width: 5rem;
     height: 100%;
     content: "";
     z-index: 1;
@@ -62,6 +62,8 @@
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding: .2rem;
+    font-weight: 900;
+    font-size: 2rem;
 }
 
 .Programas-section h3{

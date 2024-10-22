@@ -2,7 +2,7 @@
     --locutores-width: 100%;
     --locutores-height: 20vh;
     /* --locutores-elements: 8;  */
-    --locutores-elements-displayed: 3;
+    --locutores-elements-displayed: 4;
     --locutores-element-width: calc(var(--locutores-width) / var(--locutores-elements-displayed));
     --locutores-animation-duration: calc(var(--locutores-elements) * 3s);
   }
@@ -19,10 +19,37 @@
     overflow: hidden;
     position: relative;
 }
+.locutores-section h2{
+    color: rgb(0, 5, 106);
+    margin-bottom: .5rem;
+    border-bottom: solid 1px rgba(255, 255, 0, 0.551);
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: .2rem;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.locutores-section h3{
+    text-align: start;
+    color: black;
+    font-weight: 900;
+    margin-top: 0;
+    padding: 10px 30px;
+}
+.locutores-section p{
+    text-align: start;
+    color: rgba(0, 0, 0, 0.589);
+    padding-left: .5rem;
+    margin-bottom: 0;
+}
 .locutores-section:before, .locutores-section:after {
     position: absolute;
     top: 0;
-    width: 10rem;
+    width: 5rem;
     height: 100%;
     content: "";
     z-index: 1;
@@ -53,10 +80,12 @@
     
 }  
 .marquee-content-locutores .card{
-    margin-left: 10px;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    margin: 0 10px;
     padding: 10px;
     min-width: 190px;
-    max-height: 100%;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
