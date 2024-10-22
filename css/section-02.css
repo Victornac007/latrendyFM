@@ -1,13 +1,22 @@
 .section_2{
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   gap: 1rem;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+      "locutores-section locutores-section ads_video"
+      "Programas-section Programas-section ads_video"; 
+    
+  .locutores-section { grid-area: locutores-section; }
+  .ads_video { grid-area: ads_video; }
+  .Programas-section { grid-area: Programas-section; }
 }
 .section_2 h2{
   text-align: center;
@@ -16,15 +25,6 @@
   margin-bottom: 0;
   font-weight: 800;
 }
-.Programas-section{
-  max-width: 49%;
-
-}
-.locutores-section{
-  max-width: 49%;
-
-}
-
 .card {
   width: 210px;
   text-align: center;
@@ -53,20 +53,17 @@
   width: 100%;
   max-width: 1024px;
   height: fit-content;
-  background-color:transparent;
   border-radius: 1rem;
   overflow: hidden;
-  aspect-ratio: 16/9;
   margin: 0 auto;
 }
-.ads_section img{
+.carousel-item img{
   border-radius: 1rem;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 1rem;
-
 }
 @media (max-width:600px){
   .section_2{

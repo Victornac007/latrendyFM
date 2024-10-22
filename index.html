@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
     <!-- HOJAS DE ESTILOS -->
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/nav.css">
@@ -21,6 +22,7 @@
     <link rel="stylesheet" href="./css/programas.css">
     <link rel="stylesheet" href="./css/contentScrolling.css">
     <link rel="stylesheet" href="./css/footer.css">
+
 </head>
 <!-- ANOTACIONES -->
 <!-- direccion de carruseles (locutores y programas sean opuestos)-->
@@ -165,23 +167,88 @@
             </div>
             
         </section>
-
+        <div class="Programas-section">
+            <h2>NUESTROS SPONSORS</h2>
+            <div class="marquee-content-programas programas--info">
+                <div class="card">
+                    <img src="./assets/imgs/programa_top-10.jpg" alt="Carlos El Ché">
+                    <p>Música</p>
+                    <h3>Top 10 Éxitos</h3>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/imgs/programa_entrevista-3.jpg" alt="Sofía La Trendy">
+                    <p>Entrevista</p>
+                    <h3>Charlas con Artistas</h3>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/imgs/programa_retro-actual.jpg" alt="Javier El Retro">
+                    <p>Cultura</p>
+                    <h3>Retro y Actualidad</h3>
+                </div>
+                <div class="card">
+                    <img src="./assets/imgs/programa_top-10.jpg" alt="Carlos El Ché">
+                    <p>Música</p>
+                    <h3>Top 10 Éxitos</h3>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/imgs/programa_entrevista-3.jpg" alt="Sofía La Trendy">
+                    <p>Entrevista</p>
+                    <h3>Charlas con Artistas</h3>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/imgs/programa_retro-actual.jpg" alt="Javier El Retro">
+                    <p>Cultura</p>
+                    <h3>Retro y Actualidad</h3>
+                </div>
+                <div class="card">
+                    <img src="./assets/imgs/programa_top-10.jpg" alt="Carlos El Ché">
+                    <p>Música</p>
+                    <h3>Top 10 Éxitos</h3>
+                </div>
+            
+                <div class="card">
+                    <img src="./assets/imgs/programa_entrevista-3.jpg" alt="Sofía La Trendy">
+                    <p>Entrevista</p>
+                    <h3>Charlas con Artistas</h3>
+                </div>
+            </div>
+        </div>
         <section class="section_2">
-            <div class="ads_section">
+            <video
+                id="my-video"
+                class="video-js ads_section ads_video"
+                controls
+                autoplay
+                width="400px"
+                preload="auto"
+                poster="MY_VIDEO_POSTER.jpg"
+                data-setup="{}"
+            >
+                <source src="./assets/publicidad/a0f3b8139b76ad0dd9ff42ca1fc7bbbf.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                </p>
+            </video>
+            <!-- <div class="ads_section">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./assets/imgs/sld__jump.webp" class="d-inline w-100" alt="...">
+                            <img src="./assets/publicidad/recicla_publi.gif" class="d-inline w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/imgs/sld__sportlife_run.webp" class="d-inline w-100" alt="...">
+                            <img src="./assets/publicidad/pasta_publi.gif" class="d-inline w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://img.freepik.com/vector-gratis/plantilla-banner-venta-actividades-despues-escuela-degradado_23-2149668923.jpg" class="d-inline w-100" alt="...">
+                            <img src="./assets/publicidad/fit_publi.gif" class="d-inline w-100" alt="...">
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="locutores-section">
                 <h2>Nuestros Locutores Estelares</h2>
                 <div class="marquee-content-locutores locutores--info">
@@ -282,50 +349,6 @@
                         <p>Entrevista</p>
                         <h3>Charlas con Artistas</h3>
                     </div>
-                
-                    <!-- <div class="card">
-                        <img src="./assets/imgs/programa_retro-actual.jpg" alt="Javier El Retro">
-                        <p>Cultura</p>
-                        <h3>Retro y Actualidad</h3>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/imgs/programa_top-10.jpg" alt="Carlos El Ché">
-                        <p>Música</p>
-                        <h3>Top 10 Éxitos</h3>
-                    </div>
-                
-                    <div class="card">
-                        <img src="./assets/imgs/programa_entrevista-3.jpg" alt="Sofía La Trendy">
-                        <p>Entrevista</p>
-                        <h3>Charlas con Artistas</h3>
-                    </div>
-                
-                    <div class="card">
-                        <img src="./assets/imgs/programa_retro-actual.jpg" alt="Javier El Retro">
-                        <p>Cultura</p>
-                        <h3>Retro y Actualidad</h3>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/imgs/programa_entrevista-3.jpg" alt="Sofía La Trendy">
-                        <p>Entrevista</p>
-                        <h3>Charlas con Artistas</h3>
-                    </div>
-                
-                    <div class="card">
-                        <img src="./assets/imgs/programa_retro-actual.jpg" alt="Javier El Retro">
-                        <p>Cultura</p>
-                        <h3>Retro y Actualidad</h3>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/imgs/programa_top-10.jpg" alt="Carlos El Ché">
-                        <p>Música</p>
-                        <h3>Top 10 Éxitos</h3>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/imgs/programa_entrevista-3.jpg" alt="Sofía La Trendy">
-                        <p>Entrevista</p>
-                        <h3>Charlas con Artistas</h3>
-                    </div> -->
                 </div>
             </div>
 
@@ -337,6 +360,7 @@
         </footer>
     </main>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
 </html>
