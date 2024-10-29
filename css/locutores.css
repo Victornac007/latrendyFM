@@ -19,6 +19,7 @@
     overflow: hidden;
     position: relative;
 }
+
 .locutores-section h2{
     color: rgb(0, 5, 106);
     margin-bottom: .5rem;
@@ -67,6 +68,9 @@
     height: 100%;
     display: flex;
     animation: locutoresScrolling var(--locutores-animation-duration) linear infinite;
+}
+.marquee-content-locutores:hover {
+    animation-play-state: paused;
 }
 @keyframes locutoresScrolling {
     0% { transform: translateX(calc(-1 * var(--locutores-element-width) * var(--locutores-elements))); }
