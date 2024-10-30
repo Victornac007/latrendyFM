@@ -1,19 +1,22 @@
 .section_2{
   width: 100%;
   /* max-width: 1200px; */
+  background: url(https://i.pinimg.com/736x/e7/66/86/e76686d11259a2d0d8ae5dc2c1c61025.jpg) center / cover no-repeat;
+    background-attachment: fixed;
   margin: 0 auto;
   padding: 1rem;
+  padding-bottom: 15rem;
+
   gap: 1rem;
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-auto-rows: 1fr; 
-    grid-template-columns: .8fr .8fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
     gap: 20px 20px; 
     grid-template-areas: 
       "locutores-section locutores-section ads_video"
       "Programas-section Programas-section ads_video"; 
-    
   .locutores-section { grid-area: locutores-section; }
   .ads_video { grid-area: ads_video; }
   .Programas-section { grid-area: Programas-section; }
@@ -50,13 +53,12 @@
   font-weight: 800;
 }
 .ads_section{
-  width: 100%;
+  width: fit-content;
   height: fit-content;
   border-radius: 1rem;
   overflow: hidden;
   margin: 0 auto;
   border-radius: 1rem;
-  aspect-ratio: 16/9;
 }
 .ads_video video{
   border-radius: 1rem;

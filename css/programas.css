@@ -2,9 +2,9 @@
     --programas-width: 100%;
     --programas-height: 20vh;
     /* --programas-elements: 8; */ /* defined with JavaScript */
-    --programas-elements-displayed: 4;
+    --programas-elements-displayed: 2;
     --programas-element-width: calc(var(--programas-width) / var(--programas-elements-displayed));
-    --programas-animation-duration: calc(var(--programas-elements) * 3s);
+    --programas-animation-duration: calc(var(--programas-elements) * 10s);
   }
 
 
