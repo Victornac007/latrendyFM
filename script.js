@@ -83,3 +83,4 @@ rootProgramas.style.setProperty("--programas-elements", marqueeContentProgramas.
 for(let i=0; i<programasElementsDisplayed; i++) {
     marqueeContentProgramas.appendChild(marqueeContentProgramas.children[i].cloneNode(true));
 }
+// SPONSORS SCROLLING
